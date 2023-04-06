@@ -1,3 +1,5 @@
+const AutoImportESLintGlobals = require('unplugin-auto-import/eslint')
+
 module.exports = {
   env: {
     browser: true,
@@ -12,6 +14,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['vue', '@typescript-eslint'],
+  globals: { ...AutoImportESLintGlobals() },
   rules: {
     'no-console': 2,
   },
