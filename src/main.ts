@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
+import { setupRouter } from '@/router'
+import 'uno.css'
+import 'nprogress/nprogress.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+setupRouter(app)
+
+app.mount('#app')
