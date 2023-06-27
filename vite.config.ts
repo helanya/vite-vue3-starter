@@ -11,6 +11,7 @@ export default defineConfig({
     UnoCss(),
     AutoImport({
       imports: ['vue'],
+      dts: 'src/auto-imports.d.ts',
     }),
   ],
   resolve: {
