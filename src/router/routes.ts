@@ -4,15 +4,15 @@ export default [
     path: '/',
     redirect: 'login',
     meta: {
-      title: 'Root',
-    },
+      title: 'Root'
+    }
   },
   {
     name: 'login',
     path: '/login',
     component: () => import('@/views/login/index.vue'),
     meta: {
-      title: '登录',
-    },
-  },
+      title: '登录'
+    }
+  }
 ]
